@@ -44,6 +44,7 @@ headers = {
     'cache-control': "no-cache"
 }
 
+# POST commands will start a stream
 resp = requests.post(command_url, headers=headers, data=payload)
 
 print(resp.text)
